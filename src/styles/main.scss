@@ -1,3 +1,30 @@
-body {
-  margin: 0;
-}
+@import "./utils/vars";
+@import "./utils/mixins";
+@import "fonts";
+@import "typography";
+@import "./blocks/page";
+@import "./blocks/body";
+@import "./blocks/icon";
+@import "./blocks/header";
+@import "./blocks/nav";
+@import "./blocks/button";
+@import "./blocks/grid";
+@import "./blocks/menu";
+@import "./blocks/about";
+@import "./blocks/block";
+@import "./blocks/title";
+@import "./blocks/features";
+@import "./blocks/team";
+@import "./blocks/materials";
+@import "./blocks/carousel";
+@import "./blocks/indicators";
+@import "./blocks/circle";
+@import "./blocks/size";
+@import "./blocks/materalDescription";
+@import "./blocks/advantages";
+@import "./blocks/questions";
+@import "./blocks/contacts";
+@import "./blocks/footer";
+@import "./blocks/bag";
+@import "./blocks/checkout";
+@import "./blocks/thanks-window";

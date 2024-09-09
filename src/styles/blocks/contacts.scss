@@ -1,0 +1,19 @@
+.contacts {
+  &__item {
+    margin-bottom: 34px;
+    max-width: 278px;
+  }
+
+  &__header {
+    font-size: 24px;
+    color: #0004;
+  }
+
+  &__info {
+    color: $main-text-color;
+    :hover {
+      text-decoration: underline;
+      text-underline-offset: 8px;
+    }
+  }
+}

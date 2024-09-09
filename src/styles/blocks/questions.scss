@@ -1,0 +1,164 @@
+.questions {
+  position: relative;
+  background-image: url(../images/questions-background.svg);
+  background-position: left 0 top 120px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: visible hidden;
+
+  @include desktop {
+    background-size: 120%;
+    background-position: right 130px top 120px left -130px;
+  }
+
+  @include tablet {
+    background-size: 160%;
+    background-position: right 20px top 120px left -130px;
+  }
+
+  &__container {
+    padding-top: 120px;
+    display: flex;
+    align-items: center;
+    gap: 230px;
+
+    @include tablet {
+      gap: 140px;
+    }
+
+    @include phone {
+      display: block;
+    }
+  }
+
+  &__header {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 150%;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #000;
+    margin-top: 40px;
+    margin-bottom: 0;
+
+    @include tablet {
+      min-width: 350px;
+    }
+
+    &__sign {
+      color: $main-text-color;
+    }
+  }
+
+  &__line {
+    display: flex;
+    min-width: 240px;
+    flex-grow: 2;
+    align-items: center;
+    border-bottom: 1px solid #0003;
+    margin-bottom: 30px;
+
+    :focus {
+      outline: none;
+      background-color: none;
+    }
+  }
+
+  &__subheader {
+    font-size: 24px;
+    color: #000;
+  }
+
+  &__client {
+    height: 300px;
+  }
+
+  &__button {
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18px;
+    width: 52px;
+    background: none;
+
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    border-bottom: 1px dashed #333;
+
+    font-family: Manrope, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #333;
+
+    @include phone {
+      height: 48px;
+    }
+
+    &:hover {
+      color: red;
+      border-bottom: 1px dashed red;
+    }
+  }
+
+  &__text {
+    font-family: Manrope, sans-serif;
+    font-size: 16px;
+    margin-bottom: 4px;
+    padding-left: 6px;
+  }
+
+  &__foarm {
+    min-height: 24px;
+    overflow: visible;
+    resize: vertical;
+    border: none;
+    width: 100%;
+    background-color: transparent;
+  }
+
+  &__textarea {
+    font-family: Manrope, sans-serif;
+    font-size: 16px;
+    margin-bottom: 4px;
+    padding-left: 6px;
+    height: 80px;
+    resize: none;
+
+    &:focus {
+      height: 80px;
+    }
+
+    &::placeholder {
+      font-family: Manrope, sans-serif;
+      color: #4f4f4f;
+      font-size: 16px;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    right: -100px;
+    top: 0;
+
+    @include tablet {
+      right: -40px;
+    }
+
+    @include desktop {
+      right: 0;
+    }
+  }
+}
+
+input::placeholder {
+  font-family: Manrope, sans-serif;
+  color: #4f4f4f;
+  font-size: 16px;
+}

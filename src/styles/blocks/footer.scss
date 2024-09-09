@@ -1,0 +1,90 @@
+.footer {
+  margin-bottom: 0;
+
+  &__sotialmedia {
+    margin-bottom: 50px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 85px;
+    justify-content: center;
+
+    @include phone {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s linear;
+
+    :hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+    @include phone {
+      flex-direction: column;
+    }
+  }
+
+  &__logo {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 150%;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: $main-text-color;
+    text-align: center;
+    padding-bottom: 20px;
+    
+    :hover {
+      font-size: 38px;
+    }
+  }
+
+  &__subheader {
+    margin-bottom: 10px;
+    margin-top: 0;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #333;
+
+    &:hover {
+      text-decoration: underline;
+      text-underline-offset: 8px;
+    }
+
+    @include phone {
+      display: none;
+    }
+  }
+
+  &__copyright {
+    @include phone {
+      text-align: center;
+    }
+  }
+
+  &__adress {
+    color: $main-text-color;
+    
+    @include phone {
+      display: none;
+    }
+  }
+}
