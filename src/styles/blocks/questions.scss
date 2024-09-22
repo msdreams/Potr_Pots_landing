@@ -78,33 +78,6 @@
     cursor: pointer;
     margin: 0 auto;
     margin-top: 30px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 18px;
-    width: 52px;
-    background: none;
-
-    box-sizing: border-box;
-    border: 1px solid transparent;
-    border-bottom: 1px dashed #333;
-
-    font-family: Manrope, sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 150%;
-    color: #333;
-
-    @include phone {
-      height: 48px;
-    }
-
-    &:hover {
-      color: red;
-      border-bottom: 1px dashed red;
-    }
   }
 
   &__text {

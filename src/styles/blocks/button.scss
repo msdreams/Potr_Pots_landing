@@ -4,7 +4,6 @@
   align-items: center;
   height: 48px;
   width: 240px;
-  background: #ffe339;
   box-sizing: border-box;
   border: 1px solid transparent;
 
@@ -16,16 +15,6 @@
   cursor: pointer;
   transition: all 0.2s;
 
-  @include desktop {
-    border: 1px solid #03839e;
-    background: #f8f8f8;
-  }
-
-  @include tablet {
-    border: 1px solid #03839e;
-    background: #f8f8f8;
-  }
-
   &__errow {
     margin-left: 24px;
   
@@ -34,28 +23,37 @@
     }
   }
 
-  &:hover {
+  &--primary {
+    background: #03839e;
+    color: #f8f8f8;
+
+    &:hover {
+      opacity: 80%;
+    }
+    .button__errow--white {
+      display: inline-block;
+    }
+
+    .button__errow--black {
+      display: none;
+    }
+  }
+
+  &--primary2 {
+    background: #ffe339;
+
+    &:hover {
+      background: #FFEC7A;
+    }  
+  }
+
+  &--secondary {
     border: 1px solid #03839e;
     background: #f8f8f8;
 
-    @include tablet {
-      border: 1px solid #03839e;
+    &:hover {
       background: #03839e;
-      color: #fff;
-
-      .button__errow--white {
-        display: inline-block;
-      }
-  
-      .button__errow--black {
-        display: none;
-      }
-    }
-    
-    @include desktop {
-      border: 1px solid #03839e;
-      background: #03839e;
-      color: #fff;
+      color: #f8f8f8;
 
       .button__errow--white {
         display: inline-block;
