@@ -1,3 +1,14 @@
-Landing page project built with HTML, SCSS, and the BEM methodology for structured and maintainable code. This project focuses on creating a responsive, modern design with clean and scalable CSS architecture.
+Potr Pots Landing Page
+This landing page project showcases a clean, modern design for Potr Pots, built using HTML, SCSS, and the BEM methodology. It emphasizes responsive design principles, ensuring an optimized experience across devices, while maintaining a scalable and modular CSS architecture for long-term maintainability.
+
+The page is crafted to deliver:
+
+Aesthetically pleasing visuals that reflect the brand identity.
+Seamless responsiveness, adjusting layouts and elements fluidly for desktops, tablets, and mobile devices.
+Efficient performance, thanks to optimized assets and CSS techniques.
+Well-structured SCSS, following BEM for reusable and maintainable components.
+This project highlights my skills in front-end development, with a focus on best practices for clean, maintainable, and scalable code, allowing for easy future enhancements.
+
+You can explore the live demo below.
     - [Figma](https://www.figma.com/design/50zgLU65Mcd3MisFHMfLfx/POTR-POTS_FE-students?node-id=1760-281&node-type=canvas)
     - [DEMO LINK](https://msdreams.github.io/Potr_Pots_landing/)
